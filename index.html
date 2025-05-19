@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Answerly Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+ <style>
+    section {
+      margin-bottom: 40px; /* reduce large gaps */
+    }
+
+    .hero {
+      padding-bottom: 40px !important;
+    }
+
+    .features-grid,
+    .extras-section,
+    .cta-section {
+      padding-top: 60px !important;
+      padding-bottom: 60px !important;
+    }
+
+    .training-section,
+    .collect-section,
+    .book-section,
+    .models-section {
+      padding-top: 60px !important;
+      padding-bottom: 60px !important;
+      height: auto !important;
+    }
+
+    .footer {
+      margin-top: 60px;
+    }
+  </style>
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="images/logo.svg" alt="Answerly Logo" class="logo" />
+
+        </div>
+        <div class="navbar-right">
+          <nav class="nav-links">
+            <a href="#">Pricing</a>
+            <a href="#" class="whitelabel">Whitelabel</a>
+            <a href="#">Log in</a>
+          </nav>
+         <div class="email-signup-combined">
+  <input type="email" placeholder="Your e-mail" />
+  <button type="submit">Sign up</button>
+</div>
+
+        <!-- </div> -->
+         <div class="mobile-menu-icon" onclick="toggleMenu()">
+  <i class="fas fa-bars"></i>
+</div>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#">Pricing</a>
+  <a href="#">Help</a>
+  <a href="#">Log in</a>
+  <button class="mobile-btn whitelabel">Whitelabel</button>
+  <button class="mobile-btn outline">Help</button>
+  <button class="mobile-btn filled">Get Started</button>
+</div>
+
+      </header>
+     <section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-heading">
+  <span class="ai-thin">AI-First</span><br />
+  <span class="cs-bold">Customer Support.</span>
+</h1>
+
+
+    <form class="hero-form">
+      <div class="email-signup-combo">
+        <input type="email" placeholder="Your e-mail" />
+        <button type="submit">Sign Up</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+        </div>
+         <div class="feature-card">
+          <div class="video-wrapper">
+            <video class="feature-video" src="ai-chat-agent.webm" autoplay muted loop playsinline></video>
+          </div>
+          
+        </div>
+      </section>
+      <section class="features-grid">
+       
+      </section>
+      <section class="training-section">
+        <div class="training-text">
+          <h2>Train the AI in Seconds.</h2>
+          <p>You can train Answerly's AI in seconds by choosing from a range of flexible training options.</p>
+          <ul>
+            <li>QA Pairs</li>
+            <li>Website</li>
+            <li>Google Sheet</li>
+            <li>Google Doc</li>
+            <li>PDF/DOC/CSV</li>
+            <li>Text File</li>
+            <li>Youtube Video</li>
+          </ul>
+        </div>
+        <div class="training-video-wrapper">
+            <div class="training-video">
+              <video src="lightning-icon.webm" autoplay muted loop playsinline></video>
+            </div>
+          </div>
+          
+      </section>
+
+      <section class="collect-section">
+        <div class="collect-video-wrapper">
+          <div class="collect-video">
+            <video src="collect-data.webm" autoplay muted loop playsinline></video>
+          </div>
+        </div>
+        <div class="collect-text">
+          <h2>Collect Data Seamlessly.</h2>
+          <ul>
+            <li>With Answerly, you can easily collect data by creating a customized form directly within the platform.</li>
+            <li>The AI agent will then guide users through the form, asking relevant questions to gather the information you need.</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section class="book-section">
+        <div class="book-text">
+          <h2>Book meetings with AI.</h2>
+          <ul>
+            <li>Our AI agent can be taught various functions, including the ability to embed a calendar directly within the chat.</li>
+            <li>This allows customers to easily book a meeting when they request it.</li>
+          </ul>
+        </div>
+        <div class="book-video-wrapper">
+          <div class="book-video">
+            <video src="book-meeting.webm" autoplay muted loop playsinline></video>
+          </div>
+        </div>
+      </section>
+      
+      <section class="models-section">
+        <div class="models-video-wrapper">
+          <div class="models-video">
+            <video src="all-models.webm" autoplay muted loop playsinline></video>
+          </div>
+        </div>
+        <div class="models-text">
+          <h2>All the AI models.</h2>
+          <p>Select any AI provider of your choice and insert the desired AI model name.</p>
+          <ul>
+            <li>OpenAI</li>
+            <li>DeepSeek</li>
+            <li>Mistral</li>
+            <li>Anthropic</li>
+            <li>Gemini</li>
+            <li>OpenRouter</li>
+            <li>Azure</li>
+            <li>NVIDIA</li>
+            <li>Cerebras</li>
+            <li>Groq</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section class="features-scroll-section">
+        <div class="scroll-heading">
+          <h2>What our customers say...</h2>
+        </div>
+      
+        <div class="scroll-container" id="cardScroller">
+            <div class="feature-card-scroll">
+                <div class="stars">★★★★★</div> <!-- or use Font Awesome version -->
+
+                <p class="testimonial-highlight">
+                    Nice product with amazing features and great support!
+                  </p>
+                
+                <p class="testimonial-text">
+                    I am very satisfied so far with my decision to go for the Tier5 package from Answerly. In my search for a chatbot provider, I looked at various options, from cheap to very expensive, but for this price, Answerly is unparalleled! The unique features of an iframe embed in the chat and real-time website crawling are very nice additions.
+                </p>
+                
+                <div class="testimonial-footer">
+                  <img src="images/icon1.webp" alt="User" class="testimonial-avatar" />
+                  <div class="testimonial-info">
+                    <strong>Info7752A</strong>
+                    <span>May 15, 2024</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="feature-card-scroll">
+                <div class="stars">★★★★★</div>
+              
+                <p class="testimonial-highlight">
+                  It replaced all the others...
+                </p>
+              
+                <p class="testimonial-text">
+                  I switched to Answerly about 6 months ago from other providers. Pleased with Facepop, I expected great integration and options... and got it! I now use Answerly as my chat and AI version on my main site, online training LMS, and app. It’s trained with its own knowledge bases and is over 90% accurate, providing the right info in video, images, text, or PDFs. On the rare occasion it's not spot on, it's easy to update and refine the answers.
+                </p>
+              
+                <div class="testimonial-footer">
+                  <img src="images/icon2.webp" alt="User" class="testimonial-avatar" />
+                  <div class="testimonial-info">
+                    <strong>MrsJohnsoncat</strong>
+                    <span>May 13, 2024</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="feature-card-scroll">
+                <div class="stars">★★★★★</div>
+              
+                <p class="testimonial-highlight">
+                  My Experience with Answerly: Just Love it!
+                </p>
+              
+                <p class="testimonial-text">
+                  As an early adopter of the Answerly AI-powered live chat widget, I've been impressed with its capabilities. The platform is promising, especially with its rapid response times, crucial for customer satisfaction. The setup was straightforward, and the support team was remarkable—resolving issues in less than an hour. This efficient support enhances the overall user experience.
+                </p>
+              
+                <div class="testimonial-footer">
+                  <img src="images/icon3.webp" alt="User" class="testimonial-avatar" />
+                  <div class="testimonial-info">
+                    <strong>Lesteroliver
+                    </strong>
+                    <span>May 9, 2024</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="feature-card-scroll">
+                <div class="stars">★★★★★</div>
+              
+                <p class="testimonial-highlight">
+                  Great Application and Great Team!
+                </p>
+              
+                <p class="testimonial-text">
+                  Bought Answerly and it’s been a pleasure to use. Their support team is fantastic—I’d give it 10 TACOS if I could! The support forum is active with timely responses, and the UI is a joy to work with. It's flawless for personal use if you don't need live chat.
+                </p>
+              
+                <div class="testimonial-footer">
+                  <img src="images/icon4.webp" alt="User" class="testimonial-avatar" />
+                  <div class="testimonial-info">
+                    <strong>Bob</strong>
+                    <span>Jan 19, 2024</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="feature-card-scroll">
+                <div class="stars">★★★★★</div>
+              
+                <p class="testimonial-highlight">
+                  Wow Five Tacos for Sure...
+                </p>
+              
+                <p class="testimonial-text">
+                  Rarely would I use the word gorgeous to describe an interface, Answerly is just that. What really impressed me is the real time data collection. Answerly is going for many to be the one that got away. I stacked 5 tiers — there isn't one client I know that won't jump on this. Amazing.
+                </p>
+              
+                <div class="testimonial-footer">
+                  <img src="images/icon5.webp" alt="User" class="testimonial-avatar" />
+                  <div class="testimonial-info">
+                    <strong>Eyiinc</strong>
+                    <span>Jan 19, 2024</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="feature-card-scroll">
+                <div class="stars">★★★★★</div>
+              
+                <p class="testimonial-highlight">
+                  Fantastic!
+                </p>
+              
+                <p class="testimonial-text">
+                  After using Answerly for the past month, with some help from Fatos fixing a problem, I am thrilled with this chatbot. Other chatbots I’ve tried were not intuitive, slowed my website, were hard to train, and lacked features. After training Answerly on my website, customer reviews, and other items, it’s doing an amazing job in my sales funnel. I have zero complaints and am excited to see its impact on my business!
+                </p>
+              
+                <div class="testimonial-footer">
+                  <img src="images/icon6.webp" alt="User" class="testimonial-avatar" />
+                  <div class="testimonial-info">
+                    <strong>Tim9006719</strong>
+                    <span>Dec 21, 2023</span>
+                  </div>
+                </div>
+              </div>
+              
+      
+        <!-- <div class="slider-bar">
+          <div class="slider-fill" id="sliderFill"></div>
+        </div> -->
+      </section>
+      
+      
+      <!-- <script>
+        const scroller = document.getElementById("cardScroller");
+        const fill = document.getElementById("sliderFill");
+      
+        scroller.addEventListener("scroll", () => {
+          const scrollLeft = scroller.scrollLeft;
+          const scrollWidth = scroller.scrollWidth - scroller.clientWidth;
+          const percentage = (scrollLeft / scrollWidth) * 100;
+          fill.style.width = `${percentage}%`;
+        });
+      </script>
+        -->
+
+ <section class="extras-section">
+  <h2 class="extras-heading">Wait, there's more!</h2>
+
+  <div class="extras-grid">
+
+    <!-- 1 -->
+  <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 
+      2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zm-7-2h2v-3h3V9h-3V6h-2v3h-3v2h3z"/>
+  </svg>
+  <div>
+    <h3 class="extra-title">Import Knowledge Base</h3>
+    <p class="extra-text">
+      Fine-tune your Chatbot by easily bringing in existing content or data from your knowledge base into the Knowledge Hub.
+    </p>
+  </div>
+</div>
+
+
+    <!-- 2 -->
+  <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 
+      2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zm-7-2h2v-3h3V9h-3V6h-2v3h-3v2h3z"/>
+  </svg>
+  <div>
+    <h3 class="extra-title">Import Docs/PDF</h3>
+    <p class="extra-text">
+      Upload and extract valuable information from your documents/PDFs and use it to train your chatbot in the Knowledge Hub.
+    </p>
+  </div>
+</div>
+
+
+    <!-- 3 -->
+   <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 
+      9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"/>
+  </svg>
+  <div>
+    <h3 class="extra-title">Knowledge Hub</h3>
+    <p class="extra-text">
+      Knowledge Hub is the AI brain where you create and manage content about your business for the chatbot to use in providing accurate responses.
+    </p>
+  </div>
+</div>
+
+
+    <!-- 4 -->
+  <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M12 1.95c-5.52 0-10 4.48-10 10s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 
+      1.57-1.5 1.57s-1.5-.78-1.5-1.57v-1.43c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 
+      1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57v-1.43c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 
+      3-3 3 1.34 3 3-1.34 3-3 3z"/>
+  </svg>
+  <div>
+    <h3 class="extra-title">Contact Form</h3>
+    <p class="extra-text">
+      A functionality within the chatbot that allows customers to reach out directly to your inbox.
+    </p>
+  </div>
+</div>
+
+
+    <!-- 5 -->
+  <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M15 4v7H5.17l-.59.59-.58.58V4h11m1-2H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm5 4h-2v9H6v2
+      c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1z"/>
+  </svg>
+  <div>
+    <h3 class="extra-title">Answers with Pictures</h3>
+    <p class="extra-text">
+      Visions enable the chatbot to provide more engaging and interactive responses by incorporating relevant images into its answers.
+    </p>
+  </div>
+</div>
+
+
+    <!-- 6 -->
+  <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M15 4v7H5.17l-.59.59-.58.58V4h11m1-2H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm5 4h-2v9H6v2
+      c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1z"/>
+  </svg>
+  <div>
+    <h3 class="extra-title">Answers with Links</h3>
+    <p class="extra-text">
+      Link References allow Answerly's AI assistant to incorporate relevant web links into the answers it generates for users.
+    </p>
+  </div>
+</div>
+
+    <!-- 7 -->
+  <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M16.66 4.52l2.83 2.83-2.83 2.83-2.83-2.83 2.83-2.83M9 5v4H5V5h4m10 10v4h-4v-4h4M9 15v4H5v-4h4m7.66-13.31L11 7.34 
+      16.66 13l5.66-5.66-5.66-5.65zM11 3H3v8h8V3zm10 10h-8v8h8v-8zm-10 0H3v8h8v-8z"/>
+  </svg>
+  <div>
+    <h3 class="extra-title">Widget Customization</h3>
+    <p class="extra-text">
+      Adjust the look and feel of your chatbot, including its placement, colors, width, shadow etc to seamlessly blend with your website's design.
+    </p>
+  </div>
+</div>
+
+
+    <!-- 8 -->
+    <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M20,9V7c0-1.1-0.9-2-2-2h-3c0-1.66-1.34-3-3-3S9,3.34,9,5H6C4.9,5,4,5.9,4,7v2c-1.66,0-3,1.34-3,3s1.34,3,3,3v4 
+      c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2v-4c1.66,0,3-1.34,3-3S21.66,9,20,9z M18,19L6,19V7h12V19z 
+      M9,13c-0.83,0-1.5-0.67-1.5-1.5S8.17,10,9,10s1.5,0.67,1.5,1.5S9.83,13,9,13z 
+      M16.5,11.5c0,0.83-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S14.17,10,15,10S16.5,10.67,16.5,11.5z 
+      M8,15h8v2H8V15z"/>
+  </svg>
+  <div>
+    <h3 class="extra-title">Assistant Customization</h3>
+    <p class="extra-text">
+      Personalize the AI assistant's identity including the name and personality to enhance user interactions and build brand consistency.
+    </p>
+  </div>
+</div>
+
+
+    <!-- 9 -->
+   <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z"/>
+  </svg>
+  <div>
+    <h3 class="extra-title">Discover Content</h3>
+    <p class="extra-text">
+      Analyzes your existing Knowledge Hub and generates new questions that the chatbot may struggle with, helping to enhance its knowledge.
+    </p>
+  </div>
+</div>
+
+
+    <!-- 10 -->
+  <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+  </svg>
+  <div>
+    <h3 class="extra-title">Link Sharing</h3>
+    <p class="extra-text">
+      Share access to your chatbot through a direct-link, enabling interaction with users without needing to embed it on a webpage.
+    </p>
+  </div>
+</div>
+
+
+    <!-- 11 -->
+   <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M3,11h8V3H3V11z M5,5h4v4H5V5z"/>
+    <path d="M3,21h8v-8H3V21z M5,15h4v4H5V15z"/>
+    <path d="M13,3v8h8V3H13z M19,9h-4V5h4V9z"/>
+    <rect x="19" y="19" width="2" height="2"/>
+    <rect x="13" y="13" width="2" height="2"/>
+    <rect x="15" y="15" width="2" height="2"/>
+    <rect x="13" y="17" width="2" height="2"/>
+    <rect x="15" y="19" width="2" height="2"/>
+    <rect x="17" y="17" width="2" height="2"/>
+    <rect x="17" y="13" width="2" height="2"/>
+    <rect x="19" y="15" width="2" height="2"/>
+  </svg>
+  <div>
+    <h3 class="extra-title">QR Code Sharing</h3>
+    <p class="extra-text">
+      Share a direct link to your chatbot via a scannable QR code, enabling people to interact with the chatbot without it being embedded on a webpage.
+    </p>
+  </div>
+</div>
+
+
+    <!-- 12 -->
+  <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M16.67,13.13C18.04,14.06,19,15.32,19,17v3h4v-3C23,14.82,19.43,13.53,16.67,13.13z"/>
+    <path d="M15,12c2.21,0,4-1.79,4-4c0-2.21-1.79-4-4-4c-0.47,0-0.91,0.1-1.33,0.24C14.5,5.27,15,6.58,15,8s-0.5,2.73-1.33,3.76 
+      C14.09,11.9,14.53,12,15,12z"/>
+    <path d="M9,12c2.21,0,4-1.79,4-4c0-2.21-1.79-4-4-4S5,5.79,5,8C5,10.21,6.79,12,9,12z M9,6c1.1,0,2,0.9,2,2c0,1.1-0.9,2-2,2 
+      S7,9.1,7,8C7,6.9,7.9,6,9,6z"/>
+    <path d="M9,13c-2.67,0-8,1.34-8,4v3h16v-3C17,14.34,11.67,13,9,13z M15,18H3l0-0.99C3.2,16.29,6.3,15,9,15s5.8,1.29,6,2V18z"/>
+  </svg>
+  <div>
+    <h3 class="extra-title">Workspace Collaboration</h3>
+    <p class="extra-text">
+      Create a team, invite members, and collectively manage and improve the performance of your chatbot.
+    </p>
+  </div>
+</div>
+
+
+    <!-- 13 -->
+   <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M14,12l-2,2l-2-2l2-2L14,12z M12,6l2.12,2.12l2.5-2.5L12,1L7.38,5.62l2.5,2.5L12,6z M6,12l2.12-2.12l-2.5-2.5L1,12 
+      l4.62,4.62l2.5-2.5L6,12z M18,12l-2.12,2.12l2.5,2.5L23,12l-4.62-4.62l-2.5,2.5L18,12z M12,18l-2.12-2.12l-2.5,2.5L12,23 
+      l4.62-4.62l-2.5-2.5L12,18z"/>
+  </svg>
+  <div>
+    <h3 class="extra-title">CNAME</h3>
+    <p class="extra-text">
+      Enhance your online presence with Answerly's CNAME feature, enabling you to personalize the domain of your Chatbot links.
+    </p>
+  </div>
+</div>
+
+
+    <!-- 14 -->
+    <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M10,15l5.88,0c0.27-0.31,0.67-0.5,1.12-0.5c0.83,0,1.5,0.67,1.5,1.5c0,0.83-0.67,1.5-1.5,1.5c-0.44,0-0.84-0.19-1.12-0.5 
+      l-3.98,0c-0.46,2.28-2.48,4-4.9,4c-2.76,0-5-2.24-5-5c0-2.42,1.72-4.44,4-4.9l0,2.07C4.84,13.58,4,14.7,4,16c0,1.65,1.35,3,3,3 
+      s3-1.35,3-3V15z M12.5,4c1.65,0,3,1.35,3,3h2c0-2.76-2.24-5-5-5l0,0c-2.76,0-5,2.24-5,5c0,1.43,0.6,2.71,1.55,3.62l-2.35,3.9 
+      C6.02,14.66,5.5,15.27,5.5,16c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5c0-0.16-0.02-0.31-0.07-0.45l3.38-5.63 
+      C10.49,9.61,9.5,8.42,9.5,7C9.5,5.35,10.85,4,12.5,4z M17,13c-0.64,0-1.23,0.2-1.72,0.54l-3.05-5.07C11.53,8.35,11,7.74,11,7 
+      c0-0.83,0.67-1.5,1.5-1.5S14,6.17,14,7c0,0.15-0.02,0.29-0.06,0.43l2.19,3.65C16.41,11.03,16.7,11,17,11l0,0c2.76,0,5,2.24,5,5 
+      c0,2.76-2.24,5-5,5c-1.85,0-3.47-1.01-4.33-2.5l2.67,0C15.82,18.82,16.39,19,17,19c1.65,0,3-1.35,3-3S18.65,13,17,13z"/>
+  </svg>
+  <div>
+    <h3 class="extra-title">Webhooks</h3>
+    <p class="extra-text">
+      Take control of your widget's functionality by utilizing webhooks, enabling you to trigger custom actions based on specific events.
+    </p>
+  </div>
+</div>
+
+
+    <!-- 15 -->
+   <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M0 0h24v24H0V0z" fill="none"></path>
+    <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path>
+  </svg>
+  <div>
+    <h3 class="extra-title">Chatbot SDK</h3>
+    <p class="extra-text">Adapt the widget to suit your unique requirements and unlock limitless possibilities by leveraging Answerly's SDK.</p>
+  </div>
+</div>
+
+
+    <!-- 16 -->
+    <div class="extra-card">
+  <svg class="extra-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M7.5 5.6L10 7 8.6 4.5 10 2 7.5 3.4 5 2l1.4 2.5L5 7zm12 9.8L17 14l1.4 2.5L17 19l2.5-1.4L22 19l-1.4-2.5L22 14zM22 2l-2.5 1.4L17 2l1.4 2.5L17 7l2.5-1.4L22 7l-1.4-2.5zm-7.63 5.29c-.39-.39-1.02-.39-1.41 0L1.29 18.96c-.39.39-.39 1.02 0 1.41l2.34 2.34c.39.39 1.02.39 1.41 0L16.7 11.05c.39-.39.39-1.02 0-1.41l-2.33-2.35zm-1.03 5.49l-2.12-2.12 2.44-2.44 2.12 2.12-2.44 2.44z"></path>
+  </svg>
+  <div>
+    <h3 class="extra-title">Instant Embed</h3>
+    <p class="extra-text">Quickly and effortlessly integrate one or more Answerly chatbot widgets onto your website.</p>
+  </div>
+</div>
+
+
+    
+
+  </div>
+</section>
+
+
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<div class="cta-section">
+  <img src="images/logo2.svg" alt="Answerly Logo" class="cta-logo" />
+  <h2 class="cta-heading">Better customer support starts here.</h2>
+  <form class="cta-form">
+    <input type="email" placeholder="Enter your email" required />
+    <button type="submit">Sign Up Free</button>
+  </form>
+</div>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <!-- Column 1: Navigate -->
+    <div class="footer-column">
+      <h4 class="footer-title">Navigate</h4>
+      <ul>
+        <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"></path><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg>Home</a></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="m21.41 11.58-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58s1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41s-.23-1.06-.59-1.42zM13 20.01 4 11V4h7v-.01l9 9-7 7.02z"></path><circle cx="6.5" cy="6.5" r="1.5"></circle></svg>Pricing</a></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"></rect></g><g><g><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.35 18.5C8.66 17.56 10.26 17 12 17s3.34.56 4.65 1.5c-1.31.94-2.91 1.5-4.65 1.5s-3.34-.56-4.65-1.5zm10.79-1.38C16.45 15.8 14.32 15 12 15s-4.45.8-6.14 2.12C4.7 15.73 4 13.95 4 12c0-4.42 3.58-8 8-8s8 3.58 8 8c0 1.95-.7 3.73-1.86 5.12z"></path><path d="M12 6c-1.93 0-3.5 1.57-3.5 3.5S10.07 13 12 13s3.5-1.57 3.5-3.5S13.93 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"></path></g></g></svg>Sign up</a></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M11,7L9.6,8.4l2.6,2.6H2v2h10.2l-2.6,2.6L11,17l5-5L11,7z M20,19h-8v2h8c1.1,0,2-0.9,2-2V5c0-1.1-0.9-2-2-2h-8v2h8V19z"></path></g></svg>Log In</a></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"></rect><path d="M13.25,16.74c0,0.69-0.53,1.26-1.25,1.26c-0.7,0-1.26-0.56-1.26-1.26c0-0.71,0.56-1.25,1.26-1.25 C12.71,15.49,13.25,16.04,13.25,16.74z M11.99,6c-1.77,0-2.98,1.15-3.43,2.49l1.64,0.69c0.22-0.67,0.74-1.48,1.8-1.48 c1.62,0,1.94,1.52,1.37,2.33c-0.54,0.77-1.47,1.29-1.96,2.16c-0.39,0.69-0.31,1.49-0.31,1.98h1.82c0-0.93,0.07-1.12,0.22-1.41 c0.39-0.72,1.11-1.06,1.87-2.17c0.68-1,0.42-2.36-0.02-3.08C14.48,6.67,13.47,6,11.99,6z M19,5H5v14h14V5 M19,3c1.1,0,2,0.9,2,2v14 c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5c0-1.1,0.9-2,2-2H19L19,3z"></path></g></svg>Help Center</a></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"></rect><g><path d="M19,5v14H5V5H19 M19,3H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V5C21,3.9,20.1,3,19,3L19,3z"></path></g><path d="M14,17H7v-2h7V17z M17,13H7v-2h10V13z M17,9H7V7h10V9z"></path></g></svg>Docs</a></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"></rect><g><path d="M19,5v14H5V5H19 M19,3H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V5C21,3.9,20.1,3,19,3L19,3z"></path></g><path d="M14,17H7v-2h7V17z M17,13H7v-2h10V13z M17,9H7V7h10V9z"></path></g></svg>Whitelabels</a></li>
+        
+      </ul>
+    </div>
+
+    <!-- Column 2: Help Center -->
+    <div class="footer-column">
+      <h4 class="footer-title">Help Center</h4>
+      <ul>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Whitelabel</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Products -->
+    <div class="footer-column">
+      <h4 class="footer-title">Products</h4>
+      <ul>
+        <li> Answerly</li>
+        <li> FacePop</li>
+        <li>WonderForm</li>
+        <li> Banner</li>
+        <li>PopupHero</li>
+        <li> Feedlo</li>
+        <li> Survia</li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Reach Out -->
+    <div class="footer-column">
+      <h4 class="footer-title">Reach Out</h4>
+      <ul>
+        <li><a href="mailto:hi@answerly.io">hi@answerly.io</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Service Status</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-logo">
+  <img src="images/logo.svg" alt="Answerly Logo">
+</div>
+
+<hr class="footer-divider">
+
+<div class="footer-bottom">
+  <div class="footer-left">
+    © 2025 Answerly – Owned and operated by 
+    <a href="https://answerly.io" target="_blank">answerly.io</a>
+  </div>
+  <div class="footer-right">
+    Made with ❤️ from <strong>Skopje, North Macedonia</strong>
+  </div>
+</div>
+
+
+
+</footer>
+
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("mobileNav");
+    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+  }
+</script>
+
+
+
+      
+  </body>
+  
+</html>
