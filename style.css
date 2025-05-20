@@ -36,14 +36,6 @@ body {
     gap: 20px;
   }
   
-  /* .nav-links a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 8px 14px;
-    border-radius: 20px;
-  }
-   */
    .nav-links a {
   text-decoration: none;
   color: black;
@@ -88,9 +80,7 @@ body {
     transition: background-color 0.3s ease;
   }
   
-  /* .signup-btn:hover {
-    background-color: #5152f9;
-  } */
+ 
 .email-signup-combined {
   display: flex;
   align-items: center;
@@ -113,19 +103,6 @@ body {
   outline: none;
 }
 
-/* .email-signup-combined button {
-  height: 100%;
-  border: none;
-  background-color: #5152f9;
-  color: white;
-  font-weight: bold;
-  font-size: 15px;
-  padding: 0 24px;
-  border-top-right-radius: 999px;
-  border-bottom-right-radius: 999px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-} */
 .email-signup-combined button {
   height: 100%;
   border: none;
@@ -247,22 +224,7 @@ body {
     margin-bottom: 20px;
     color: #1d1d1f;
   }
-/* .hero-heading {
-  font-size: 80px;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 40px;
-  color: #1d1d1f;
-}
 
-.hero-heading .ai-thin {
-  font-weight: 300;
-}
-
-.hero-heading .cs-bold {
-  font-weight: 800;
-  margin-left: 8px;
-}  */
   .hero-heading {
   text-align: center;
   margin-bottom: 10px;
@@ -291,14 +253,6 @@ body {
     font-weight: 400;
   }
   
-  
-  /* .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 80px 60px;
-    background-color: #faf9ff;
-  } */
   
   .features-grid {
     display: grid;
@@ -687,24 +641,6 @@ body {
     justify-content: space-between;
   }
   
-  
-  /* .slider-bar {
-    height: 4px;
-    width: 100%;
-    background-color: #e0e0e0;
-    margin-top: 20px;
-    position: relative;
-    border-radius: 999px;
-  }
-  
-  .slider-fill {
-    height: 100%;
-    background-color: #6c63ff;
-    width: 0%;
-    border-radius: 999px;
-    transition: width 0.3s ease;
-  }
-   */
 
    .stars {
     color: #f4c150;
@@ -782,11 +718,6 @@ body {
   padding-left: 2%;
 }
 
-/* .extras-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 20px;
-} */
  .extras-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* always 3 per row */
@@ -809,16 +740,6 @@ body {
 }
 
 
-/* .extra-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  background-color: #ffffff;
-  padding: 20px 24px;
-  border-radius: 18px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s ease;
-} */
 
 .extra-card {
   background: transparent; /* REMOVE the gray */
@@ -1207,9 +1128,7 @@ body {
 }
 
 /*Responsive for .cta-section (email input area)
-css
-Copy
-Edit
+
 */
 
 @media (max-width: 768px) {
