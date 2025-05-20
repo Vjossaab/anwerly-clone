@@ -42,37 +42,40 @@
 
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo-container">
-            <img src="images/logo.svg" alt="Answerly Logo" class="logo" />
+<header class="navbar">
+  <div class="logo-container">
+    <img src="images/logo.svg" alt="Answerly Logo" class="logo" />
+  </div>
 
-        </div>
-        <div class="navbar-right">
-          <nav class="nav-links">
-            <a href="#">Pricing</a>
-            <a href="#" class="whitelabel">Whitelabel</a>
-            <a href="#">Log in</a>
-          </nav>
-         <div class="email-signup-combined">
-  <input type="email" placeholder="Your e-mail" />
-  <button type="submit">Sign up</button>
-</div>
+  <div class="navbar-right">
+    <nav class="nav-links">
+      <a href="#">Pricing</a>
+      <a href="#" class="whitelabel">Whitelabel</a>
+      <a href="#">Log in</a>
+    </nav>
 
-        <!-- </div> -->
-         <div class="mobile-menu-icon" onclick="toggleMenu()">
-  <i class="fas fa-bars"></i>
-</div>
+    <div class="email-signup-combined">
+      <input type="email" placeholder="Your e-mail" />
+      <button type="submit">Sign up</button>
+    </div>
+  </div>
 
-<div class="mobile-nav" id="mobileNav">
-  <a href="#">Pricing</a>
-  <a href="#">Help</a>
-  <a href="#">Log in</a>
-  <button class="mobile-btn whitelabel">Whitelabel</button>
-  <button class="mobile-btn outline">Help</button>
-  <button class="mobile-btn filled">Get Started</button>
-</div>
+  <div class="mobile-menu-icon" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
 
-      </header>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#">Pricing</a>
+    <a href="#">Help</a>
+    <a href="#">Log in</a>
+    <button class="mobile-btn whitelabel">Whitelabel</button>
+    <button class="mobile-btn outline">Help</button>
+    <button class="mobile-btn filled">Get Started</button>
+  </div>
+</header> <!-- ✅ Only this one closing tag should exist -->
+
+
+    
      <section class="hero">
   <div class="hero-content">
     <h1 class="hero-heading">
@@ -90,7 +93,7 @@
   </div>
 </section>
 
-        </div>
+        <!-- </div> -->
          <div class="feature-card">
           <div class="video-wrapper">
             <video class="feature-video" src="ai-chat-agent.webm" autoplay muted loop playsinline></video>
@@ -688,10 +691,16 @@
 
 
 <script>
-  function toggleMenu() {
-    const nav = document.getElementById("mobileNav");
-    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+function toggleMenu() {
+  const nav = document.getElementById("mobileNav");
+  const isVisible = nav.classList.contains("visible");
+
+  if (isVisible) {
+    nav.classList.remove("visible");
+  } else {
+    nav.classList.add("visible");
   }
+}
 </script>
 
 

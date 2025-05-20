@@ -1279,58 +1279,125 @@ Edit
     display: none;
   }
 
+
+}
+ .mobile-menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+ }
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  position: absolute;
+  top: 64px;
+  right: 20px;
+  border-radius: 12px;
+  z-index: 200;
+}
+
+.mobile-btn {
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 12px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  transition: background-color 0.2s ease;
+}
+
+.mobile-btn.whitelabel {
+  background-color: #5152f9;
+  color: white;
+  border: none;
+}
+
+.mobile-btn.outline {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+.mobile-btn.filled {
+  background-color: #5152f9;
+  color: white;
+  border: none;
+}
+
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background-color: white;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 64px;
+  right: 16px;
+  border-radius: 16px;
+  z-index: 200;
+  width: 260px;
+  transition: opacity 0.3s ease;
+opacity: 0;
+pointer-events: none;
+
+}
+
+
+/* Show only on small screens */
+@media (max-width: 768px) {
+  .nav-links,
+  .email-signup-combined {
+    display: none !important;
+  }
+
   .mobile-menu-icon {
     display: block;
-    position: absolute;
-    top: 20px;
-    right: 24px;
   }
 
   .mobile-nav {
     display: none;
     flex-direction: column;
-    gap: 20px;
-    background: white;
-    padding: 30px 20px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    border-radius: 16px;
+    align-items: center;
     position: absolute;
     top: 80px;
-    right: 24px;
-    z-index: 150;
-    width: 280px;
-  }
-
-  .mobile-nav a {
-    font-weight: 700;
-    font-size: 18px;
-    color: black;
-    text-decoration: none;
-  }
-
-  .mobile-btn {
-    font-size: 18px;
-    font-weight: 700;
-    padding: 12px;
-    border-radius: 12px;
-    cursor: pointer;
-    border: none;
-    width: 100%;
-  }
-
-  .mobile-btn.whitelabel {
-    background-color: #5152f9;
-    color: white;
-  }
-
-  .mobile-btn.outline {
+    right: 20px;
     background-color: white;
-    border: 2px solid black;
-    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 999;
   }
 
-  .mobile-btn.filled {
-    background-color: #5152f9;
-    color: white;
+  .mobile-nav.visible {
+    display: flex;
   }
+}
+
+
+/* Hide menu icon on desktop */
+@media (min-width: 769px) {
+  .mobile-menu-icon {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-nav.visible {
+  opacity: 1;
+  pointer-events: auto;
+  display: flex !important;
 }
